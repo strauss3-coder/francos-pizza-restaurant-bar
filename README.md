@@ -3,6 +3,8 @@
 A four page demonstration website designed and built by **Sirius Ascent** for
 Franco's Pizza Restaurant and Bar, Villieria, Pretoria.
 
+**Live demo:** <https://strauss3-coder.github.io/francos-pizza-restaurant-bar/>
+
 Plain HTML, CSS and JavaScript. No build step, no framework, no dependencies.
 
 ---
@@ -49,9 +51,18 @@ Opening `index.html` directly from the file system also works.
 
 ## Deploying
 
-The `site/` folder is the complete website. Push it to GitHub and enable Pages,
-or drag the folder into Netlify, Vercel or Cloudflare Pages. Nothing needs to be
-compiled first.
+This repository is the website. It is deployed on GitHub Pages from the `main`
+branch root, so any push to `main` republishes the live demo within a minute or
+two. It will also run as-is on Netlify, Vercel or Cloudflare Pages.
+
+## Photography
+
+The supplied images were marketing posters rather than plain photographs. The
+food photography inside those posters was extracted at full resolution and is
+used for the editorial imagery across the site (pizza, ribs, schnitzel, pork
+chops, burger, wings and flatty chicken). The posters themselves are shown whole
+and uncropped in the specials boards and the gallery, where they are the actual
+content. The logo was cropped from the supplied artwork.
 
 ---
 
