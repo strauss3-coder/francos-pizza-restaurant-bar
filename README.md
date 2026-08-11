@@ -21,7 +21,7 @@ Plain HTML, CSS and JavaScript. No build step, no framework, no dependencies.
 ## Structure
 
 ```
-site/
+.
 ├── index.html
 ├── about.html
 ├── menu.html
@@ -32,14 +32,15 @@ site/
 │   └── main.js            Nav, reveals, hours, lightbox, tabs, WhatsApp forms, easter eggs
 └── assets/
     └── img/
-        ├── brand/         Logo (cropped from the supplied artwork) and pizza photo
-        ├── specials/      All 19 supplied posters, resized for the lightbox
+        ├── brand/         Logo and favicon, cropped from the supplied artwork
+        ├── food/          Food photography extracted from the supplied posters
+        ├── specials/      All 19 supplied posters, sized for the lightbox
         └── thumbs/        Smaller versions of the same posters for grids
 ```
 
 ## Running it
 
-Any static server works. From inside `site/`:
+Any static server works. From the repository root:
 
 ```bash
 python3 -m http.server 8000
