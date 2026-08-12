@@ -58,12 +58,19 @@ two. It will also run as-is on Netlify, Vercel or Cloudflare Pages.
 
 ## Photography
 
-The supplied images were marketing posters rather than plain photographs. The
-food photography inside those posters was extracted at full resolution and is
-used for the editorial imagery across the site (pizza, ribs, schnitzel, pork
-chops, burger, wings and flatty chicken). The posters themselves are shown whole
-and uncropped in the specials boards and the gallery, where they are the actual
-content. The logo was cropped from the supplied artwork.
+The pizza imagery uses the supplied high resolution photograph
+(`Pizza-3007395.jpg`), prepared as two derivatives: a square crop centred on the
+pizza (`food/pizza.jpg`) for the hero and the photo collages, and the full
+landscape frame (`food/pizza-wide.jpg`) for the feature block on the home page.
+
+The remaining food photography was extracted at full resolution from inside the
+supplied posters (ribs, schnitzel, pork chops, burger, wings and flatty
+chicken). The posters themselves are shown whole and uncropped in the specials
+boards and the gallery, where they are the actual content. The logo was cropped
+from the supplied artwork.
+
+No image is ever rendered larger than its natural size, which is checked
+automatically as part of the layout verification.
 
 ---
 
