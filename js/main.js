@@ -11,7 +11,7 @@
    06. Lightbox
    07. Gallery filters & day tabs
    08. WhatsApp enquiry forms
-   09. Toasts & placeholder links
+   09. Toasts
    10. Easter eggs
    ========================================================================== */
 (function () {
@@ -432,7 +432,7 @@
   }
 
   /* ======================================================================
-     09. Toasts & placeholder links
+     09. Toasts
      ====================================================================== */
   var ICONS = {
     success: '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>',
@@ -460,17 +460,6 @@
       el.classList.add('is-out');
       setTimeout(function () { if (el.parentNode) el.parentNode.removeChild(el); }, 400);
     }, 4600);
-  }
-
-  function initPlaceholders() {
-    // Social profile URLs have not been supplied yet, so these buttons explain
-    // themselves rather than pointing at a guessed address.
-    $$('[data-placeholder]').forEach(function (el) {
-      on(el, 'click', function (e) {
-        e.preventDefault();
-        toast(el.getAttribute('data-placeholder'), 'info');
-      });
-    });
   }
 
   /* ======================================================================
@@ -514,7 +503,6 @@
     initFilters();
     initTabs();
     initForms();
-    initPlaceholders();
     initEasterEggs();
 
     // Stamp the current year into the footer.

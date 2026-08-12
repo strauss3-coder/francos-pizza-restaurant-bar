@@ -113,10 +113,11 @@ where the visitor is.
 
 A short list of things that need the owner's input. Everything else is finished.
 
-1. **Facebook and Instagram URLs.** No profile addresses were supplied, so the
-   social buttons currently show a short message instead of guessing a link.
-   Search for `data-placeholder` in the HTML and replace those anchors with the
-   real `href` values.
+1. **Delivery store links.** Franco's has no social media profiles, so the usual
+   social row was replaced with delivery partner links. These currently point at
+   the platform home pages, `https://www.ubereats.com/za` and
+   `https://www.mrd.com/`. Once the direct store pages are known, search for
+   `delivery-btn` in the HTML and swap the two `href` values.
 2. **Google Map.** The contact page has a styled map panel with working "Open in
    Google Maps" and "Get directions" buttons pointing at the correct address. An
    embedded map iframe can be dropped into `.map-placeholder` once the Google
@@ -137,7 +138,9 @@ A short list of things that need the owner's input. Everything else is finished.
 Nothing on this site was invented. Every detail comes from either the written
 brief or the supplied poster images:
 
-- Name, address, phone number, category, services and opening hours: from the brief.
+- Name, address, phone number, category, services and opening hours: from the
+  brief. The opening hours match the business's Google Business Profile and have
+  been confirmed by the owner, including the earlier Tuesday close at 10:30 PM.
 - Specials, prices, drinks lists, Quiz Night, Bingo Night and the Uber Eats and
   Mr D delivery mentions: read off the supplied posters.
 
@@ -148,9 +151,12 @@ Where the supplied posters contained obvious spelling slips, the wording has
 been corrected for the website (for example "everday" to "every day"). Product
 names and prices were not changed.
 
-One conflict is worth flagging: the posters say "open every day 10 AM to
-11:30 PM", while the brief gives Tuesday as 10:00 AM to 10:30 PM. The brief has
-been treated as authoritative.
+The posters say "open every day 10 AM to 11:30 PM", while the brief gives
+Tuesday as 10:00 AM to 10:30 PM. The owner has confirmed the brief is correct,
+since those are the hours published on the Google Business Profile.
+
+Franco's does not have Facebook or Instagram profiles, so no social links appear
+anywhere on the site.
 
 ---
 

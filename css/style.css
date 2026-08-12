@@ -1591,29 +1591,53 @@ body.is-locked { overflow: hidden; }
 }
 .footer address { font-style: normal; line-height: 1.7; }
 
-.socials { display: flex; gap: 0.5rem; margin-top: var(--space-sm); }
-.social-btn {
-  width: 42px; height: 42px;
-  display: grid; place-items: center;
-  border-radius: 50%;
+/* Delivery partners and contact channels.
+   Franco's has no social profiles, so these replace the usual social row. */
+.delivery-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: var(--space-sm);
+}
+.delivery-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  padding: 0.6em 1.05em;
+  border-radius: var(--radius-pill);
   border: 1px solid var(--border);
   background: var(--cream-100);
   color: var(--charcoal-800);
-  cursor: pointer;
-  transition: all var(--dur) var(--ease-out);
+  font-size: 0.82rem;
+  font-weight: 600;
+  line-height: 1.2;
+  white-space: nowrap;
+  transition: transform var(--dur) var(--ease-out),
+              border-color var(--dur) var(--ease),
+              background-color var(--dur) var(--ease),
+              color var(--dur) var(--ease),
+              box-shadow var(--dur) var(--ease-out);
 }
-/* On dark surfaces the buttons invert. */
-.footer .social-btn,
-.section--dark .social-btn {
+.delivery-btn svg { flex: none; color: var(--accent); }
+.delivery-btn:hover {
+  transform: translateY(-2px);
+  border-color: var(--accent);
+  box-shadow: var(--shadow-sm);
+}
+/* On dark surfaces the pills invert. */
+.footer .delivery-btn,
+.section--dark .delivery-btn {
   border-color: var(--border-dark);
   background: rgba(255,255,255,0.04);
   color: var(--cream-100);
 }
-.social-btn:hover {
-  background: var(--accent);
-  border-color: var(--accent);
-  color: #fff;
-  transform: translateY(-3px);
+.footer .delivery-btn svg,
+.section--dark .delivery-btn svg { color: var(--amber-400); }
+.footer .delivery-btn:hover,
+.section--dark .delivery-btn:hover {
+  background: rgba(232,163,61,0.12);
+  border-color: var(--amber-500);
+  color: var(--cream-50);
 }
 
 .footer__bottom {
